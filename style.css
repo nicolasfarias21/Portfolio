@@ -1,0 +1,378 @@
+@import url("styles/header.css");
+@import url("styles/presentation.css");
+@import url("styles/technologies.css");
+@import url("styles/projects.css");
+@import url("styles/experience.css");
+@import url('styles/footer.css');
+@import url('styles/sobremim.css');
+@import url('styles/skills.css');
+
+
+:root{
+  --card-color: #222222;
+  --background-color: #161513;
+  --primary-color: #FFFFFF;
+  --secondary-color: #8491A0;
+  --secondary-text: #C5C5C5;
+  --third-text: #8491A0;
+  --footer-background: #191919;
+  --gradient-linear: linear-gradient(to right, #FF8660, #9A33FF);
+  --primary-gradient: linear-gradient(to right, #00000033, var(--gradient-linear));
+  --orange-gradient: linear-gradient(to right, #FF8660, #D5491D);
+  --blue-gradient: linear-gradient(to right, #5BADFF, #1373D1);
+  --purple-gradient: linear-gradient(to right, #b26afa, #9A33FF);
+  --font: "Poppins", sans-serif;
+}
+
+*{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+@media screen and (min-width: 1400px) {
+  .nav__header ul{
+    font-size: 18px;
+  }
+  .inicio{
+    padding: 5%;
+  }
+  .inicio__conteudo__titulo {
+    font-size: 60px;
+  }
+  .inicio__conteudo__texto{
+    font-size: 20px;
+  }
+  .inicio__contato__bloco__link{
+    font-size: 18px;
+  }
+  .sobre__mim__section__titulo{
+    font-size: 40px;
+  }
+  .sobre__mim__img{
+    width: 33rem;
+  }
+  .sobre__mim__texto h3{
+    font-size: 1.7rem;
+  }
+  .sobre__mim__texto{
+    font-size: 20px;
+  }
+  .certificados__lista h3{
+    font-size: 28px;
+  }
+  .certificados__lista p{
+    font-size: 16px;
+  }
+  .certificados__lista{
+    font-size: 20px;
+  }
+  .tecnologias__titulo{
+    letter-spacing: .75rem;
+    font-size: 24px;
+  }
+  .tecnologias__ul__li img {
+    width: 32px;
+    height: 32px;
+  }
+  .projetos__section__titulo{
+    font-size: 40px;
+  }
+  .projeto__container{
+    padding: 0rem 3rem;
+  }
+  .projeto__container__reverse{
+    padding: 0rem 3rem;
+  }
+  .projeto__conateiner__info h3{
+    font-size: 20px;
+  }
+  .projeto__techs{
+    font-size: 20px;
+  }
+  .projeto__conateiner__info p{
+    font-size: 18px;
+  }
+  .experiencia__section__titulo{
+    font-size: 40px;
+  }
+  .experiencia__container__titulo h3{
+    font-size: 24px;
+  }
+  .mostrar__img{
+    width: 34px;
+    height: 34px;
+  }
+  .experiencia__container__titulo span{
+    font-size: 18px;
+  }
+  .funcao{
+    font-size: 17px;
+  }
+  .experiencia__container__conteudo{
+    font-size: 18px;
+  }
+  .experiencia__competencias__conteudo__destaque{
+    font-size: 18px;
+  }
+  .experiencia__competencias__conteudo{
+    font-size: 18px;
+  }
+  .footer__conteudo h3{
+    font-size: 28px;
+  }
+  .footer p{
+    font-size: 18px;
+  }
+  .footer__conteudo span{
+    font-size: 18px;
+  }
+  .footer__redes__item img{
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  header{
+    height: 8.5vh;
+    justify-content: left;
+    align-items: center;
+    padding: 1%;
+}
+.container__header{
+  display: none;
+}
+.nav__header{
+    display: none;
+}
+.logo{
+    display: none;
+}
+.presentation{
+    text-align: center;
+    padding: 0rem;
+}
+.inicio{
+    height: auto;
+}
+.inicio__contato__bloco {
+  margin: 0% 25%;
+  width: 50%;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#inicio__contato__bloco__link__1{
+  margin: 0%;
+}
+#inicio__contato__bloco__link__2{
+  margin: 0%;
+}
+.sobre__mim__section{
+  padding: 0px 0px;
+}
+.sobre__mim__img{
+  width: 400px;
+ }
+.sobre__mim__texto{
+  padding: 0px 0px;
+}
+.sobre__mim__texto{
+  padding: .5rem;
+}
+.tecnologias__section{
+    width: 100%;
+    text-align: center;
+    display: grid;
+}
+.tecnologias__ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.cabeçalho__menu-hamburguer{
+    display: block;
+    position: relative;
+    left: 0%;
+  }
+  .cabeçalho__menu-hamburguer img{
+    height: 3.625rem;
+  }
+  .cabeçalho__menu-hamburguer:hover{
+    cursor: pointer;
+  }
+  .container__botao:checked~.lista-menu{
+    display: block;
+  }
+  .projeto__container{
+    height: auto;
+  }
+  .modal-content{
+    width: 65%;
+  }
+  .modal__img{
+    width: 380px;
+  }
+  .projeto__container__reverse{
+    margin-top: 20%;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+  
+    header{
+        height: 7vh;
+        justify-content: left;
+        align-items: center;
+    }
+    .container__header{
+      display: none;
+    }
+    .nav__header{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .presentation{
+        text-align: center;
+    }
+    .inicio{
+      margin-top: 20%;
+        height: auto;
+    }
+
+    .inicio__contato__bloco{
+        width: 50%;
+        margin-right: auto;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    #inicio__contato__bloco__link__1{
+      margin: 0%;
+    }
+    #inicio__contato__bloco__link__2{
+      margin: 0%;
+    }
+    .objetivo__container{
+      margin-bottom: 40%;
+    }
+    .sobre__mim__section{
+      padding: 0px 30px;
+      gap: 1rem;
+    }
+    .objetivo__info{
+      flex-direction: column;
+    }
+    .sobre__mim__img{
+      width: 300px;
+     }
+    .sobre__mim__texto{
+      padding: 0px 0px;
+    }
+    .formacao__container{
+      margin-top: 40%;
+      margin-bottom: 40%;
+    }
+    .formacao__info{
+      flex-direction: column;
+    }
+    .certificados__container{
+      padding: 0% 5%;
+  }
+    .tecnologias__section{
+        width: 100%;
+        text-align: center;
+        display: grid;
+    }
+    .tecnologias__ul{
+      padding: 0rem 5rem;
+        display: grid;
+        column-gap: normal;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .skills__container{
+      display: grid;
+    }
+    .cabeçalho__menu-hamburguer{
+        display: block;
+        position: relative;
+        left: 0%;
+      }
+      .cabeçalho__menu-hamburguer img{
+        height: 3.625rem;
+      }
+      .cabeçalho__menu-hamburguer:hover{
+        cursor: pointer;
+      }
+      .container__botao:checked~.lista-menu{
+        display: block;
+      }
+      
+      .projeto__container{
+           height: auto;
+           margin-top: 10%;
+           flex-direction: column;
+           text-align: center;
+           justify-content: center;   
+      }
+      .modal-content{
+        width: 80%;
+      }
+      .modal__img{ 
+        width: 300px;
+      }
+      .projeto__techs{
+        margin-top: 5%;
+        gap: 0.2rem;
+      }
+      .projeto__container__info {
+        margin: 0% 5%;
+        text-align: center;
+        gap: 1rem;
+      }
+      .projeto__conateiner__info__demonstrativo{
+        display: none;
+      }
+      .projeto__conateiner__info #project__reverse__text{
+        margin-bottom: 7%;
+      }
+    
+      .modal{
+        width: auto;
+        margin: 40% 2%;
+      }
+      .swiper-slide img{
+        width: 280px;
+      }
+      .swiper-slide swiper-slide-active{
+        width: 280px;
+    }
+      .projeto__container__reverse{
+        flex-direction: column;
+        height: auto;
+        margin-top: 30%;
+        text-align: center;
+      }
+      .experiencia__section{
+        padding: 0% 10%;
+      }
+      .experiencia__container{
+        padding: 3% 8%;
+        gap: 1rem;
+      }
+      .experiencia__container__titulo{
+        flex-direction: column-reverse;
+      }
+      .experiencia__container__conteudo{
+        padding: 3% 0%;
+        text-align: start;
+      }
+}
+

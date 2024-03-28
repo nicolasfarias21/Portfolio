@@ -1,0 +1,99 @@
+.experiencia__section{
+    height: auto;
+    padding: 0% 15%;
+}
+
+.experiencia__section__titulo{
+    padding: 1rem;
+    background: var(--blue-gradient);
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.experiencia__container{
+    height: auto;
+    padding: 2% 15%;
+    gap: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 1.2rem;
+}
+
+.experiencia__container__titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+.experiencia__container__titulo h3{
+    display: grid;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 21px;
+    align-items: center;
+}
+.funcao{
+    color: var(--third-text);
+    font-weight: 400;
+    font-size: 14px;
+}
+.experiencia__container__titulo span{
+    color: var(--third-text);
+    font-weight: 400;
+    font-size: 14px;
+    align-items: center;
+    opacity: 1;
+}
+
+.experiencia__container__conteudo{
+    padding: 2rem;
+    display: none;
+    color: var(--third-text);
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 14px;
+    transition: height 1.3s ease;
+}
+.mostrar__img{
+    cursor: pointer;
+    align-self: center;
+    transition: transform 0.3s ease; 
+}
+
+.experiencias__botao:checked ~ .mostrar .mostrar__img {
+    transform: rotate(180deg);
+}
+
+
+.experiencias__botao:checked ~ .experiencia__container__conteudo{
+        display: block;
+}
+
+.experiencias__botao{
+    display: none;
+}
+
+.experiencia__competencias{
+    display: none;
+    padding: 4%;
+    height: auto;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+}
+
+.experiencia__competencias__conteudo{
+    color: var(--third-text);
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 14px;
+}
+
+.experiencia__competencias__conteudo__destaque{
+    color: var(--primary-color);
+    font-weight: 700;
+}

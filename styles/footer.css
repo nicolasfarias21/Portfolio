@@ -1,0 +1,44 @@
+footer{
+    width: auto;
+    padding: 0% 15%;
+    background-color: var(--footer-background);
+    margin-top: 10%;
+}
+.footer__container{
+    padding: 5% 0%;
+    display: grid;
+}
+.footer__conteudo{
+    padding: 0% 25% 0% 0%;
+    display: grid;
+    gap: 1rem;
+}
+.footer__conteudo h3{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: 2%;
+}
+.footer__conteudo p{
+    color: var(--third-text);
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 2%;
+}
+.footer__conteudo span{
+    display: flex   ;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--secondary-text);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2%;
+}
+.footer__redes{
+    display: flex;
+    gap: 1.5rem;
+}
+.footer__redes__item img{
+    width: 28px;
+}
+

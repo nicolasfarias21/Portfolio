@@ -1,0 +1,30 @@
+.skills__section{
+    justify-content: center;
+    margin-right: auto;
+    padding: 2rem;
+    text-align: center;   
+}
+.skills__container{
+    text-align: center;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.skills__card{
+    display: grid;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 1rem;
+    height: 13.12rem;
+    width: 16.25rem;
+}
+.skills__card h3{
+    font-size: 1.5rem;
+    color: var(--secondary-text);
+}
+.skills__lista__item{
+    margin-top: .2rem;
+    color: var(--primary-color);
+    line-height: 150%;
+}

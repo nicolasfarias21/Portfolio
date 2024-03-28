@@ -1,0 +1,93 @@
+
+header{
+    height: 4.375rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--card-color);
+    padding: 0.1% 0%;
+}
+.container__botao{
+    display: none;
+  }
+  .cabeçalho__menu-hamburguer{
+    display: none;
+  }
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 25vh;
+    list-style: none;
+    justify-content: left;
+    padding-inline-start: 0px;
+    background-color: var(--card-color);
+    height: 100vh;
+    border: 0.2em solid var(--background-color) ;
+    left: 0;
+  }
+  
+  .lista-menu-titulo,
+  .lista-menu-item{
+    justify-content: left;
+    padding: 1em;
+  }
+  .lista-menu-titulo{
+    font-size: 18px;
+    font-weight: 800;
+    background: var(--gradient-linear);
+    background-clip: text;
+    color: transparent;
+  }
+  .lista-menu-item{
+    border-top: 0.2em solid var(--background-color) ;
+    border-image-slice: 1;
+    font-size: 18px;
+    font-weight: 600;  
+  }
+  .lista-menu-item a{
+    color: var(--primary-color);
+  }
+  .lista-menu #ultimo__item{
+    border-bottom: 0.2em solid var(--background-color) ;
+  }
+
+  .ul__header__icons__list{
+    display: flex;
+    padding-inline-start: 0px;
+    justify-content: center;
+    gap: 1rem;
+    height: 20vh;
+    align-items: center;
+  }
+
+.container__header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__header{
+    list-style: none;
+    align-items: center;
+}
+
+.nav__header ul{
+    display: flex;
+    color: var(--primary-color);
+    gap: 2rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+.ul__header{
+    align-items: center;
+}
+
+.ul__header a{
+    color: var(--primary-color);
+}
