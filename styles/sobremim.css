@@ -28,9 +28,12 @@
 }
 .sobre__mim__texto{
     text-align: start;
-    padding: 5rem;
+    padding: 4rem;
     line-height: 1.5rem;
     color: var(--primary-color);
+}
+.sobre__mim__texto p{
+    margin: 2rem 0rem;
 }
 .sobre__mim__texto h3{
     text-align: center;
