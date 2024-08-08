@@ -79,6 +79,7 @@
 }
 
 .projeto__container__reverse{
+    margin-bottom: 10%;
     justify-content: right;
     display: flex;
     flex-direction: row-reverse;
